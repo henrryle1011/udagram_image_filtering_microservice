@@ -1,5 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
+metadata:
+  name: env-config
 data:
   AWS_BUCKET: test-10112000-dev
   AWS_PROFILE: default
@@ -7,5 +9,3 @@ data:
   POSTGRES_DB: postgres
   POSTGRES_HOST: crd.cz1ewadlruel.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100
-metadata:
-  name: env-config
